@@ -1,0 +1,44 @@
+.login-back
+{
+    background-color:aqua;
+    border: 5px solid rgb(245, 245, 245);
+    padding: 20px;
+    
+}
+
+
+body
+{
+    background-color: lightpink;
+    font-family: 'Arial';
+
+}
+
+.login_options
+{
+    display: flex;
+    align-items: center;
+   
+}
+
+.intxt
+{
+    width: 100%;
+    margin: 10px 0px;
+    padding: 10px 0px;
+    box-sizing: border-box;
+    border: 3px solid rgb(66, 185, 66);
+}
+
+#btn
+{
+    padding: 10px 10px;
+    background-color: rgb(66, 185, 66);
+    
+}
+
+.cancel
+{
+    margin: 0px 10px;
+    border: 0px;
+}
