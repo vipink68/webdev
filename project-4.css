@@ -1,3 +1,9 @@
+
+* {
+    box-sizing: border-box;
+  }
+  
+
 body{
     background-color: #337088;
     font-family: serif;
@@ -77,3 +83,37 @@ textarea
     height: 5em;
 }
 
+@media only screen and (max-width: 768px)
+{
+    *{
+        box-sizing: border-box;
+    }
+    body{
+        display: block;
+        width: 100%;
+        
+    }
+    #main{
+        padding: 0.5em 1em 1em 1em;
+        width: 90vw;
+        
+    }
+    div>.field
+    {
+        display: block;
+        width: 100%;       
+    }
+    .field-1
+    {
+        text-align: left;
+        padding: .5em 0em;
+    }
+    .feild-2{
+        width: 100%;
+        margin: 0px;
+    }
+    input[type= text]
+    {
+        width: 100%;
+    }
+}
