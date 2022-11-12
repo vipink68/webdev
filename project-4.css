@@ -1,4 +1,5 @@
 
+
 * {
     box-sizing: border-box;
   }
@@ -7,6 +8,7 @@
 body{
     background-color: #337088;
     font-family: serif;
+    width: 100vw;
 }
 #main{
     height: 80%;
@@ -41,7 +43,7 @@ body{
 div.field-1,.feild-2
 {
     width: 50%;
-    margin: 0em .25em;
+    margin: 0em;
 }
 
 
@@ -90,7 +92,9 @@ textarea
     }
     body{
         display: block;
-        width: 100%;
+        width: 100vw;
+        margin: 0%;
+        padding: 0%;
         
     }
     #main{
