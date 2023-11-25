@@ -4,7 +4,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="project-4.css">
+    <style>
+        * {
+    box-sizing: border-box;
+  }
+  
+
+body{
+    background-color: #337088;
+    font-family: serif;
+    width: 100vw;
+}
+#main{
+    height: 80%;
+    width: 40em;
+    margin: auto;
+    background-color: #d1d2d3;
+    display: block;
+    border-radius: 10px;
+    padding: 2em 3em 5em 3em;
+    
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    font-size: large;
+}
+
+.field{
+    display: flex;
+}
+
+
+.field-1
+{
+    text-align: end;
+    vertical-align: top;
+    
+}
+
+div.field-1,.feild-2
+{
+    width: 50%;
+    margin: 0em;
+}
+
+
+div.btn{
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    background-color: rgb(70, 73, 233);
+    padding: 10px 20px;
+    color: aliceblue;
+    border: none;
+    border-radius: 5px;
+}
+
+.field
+{
+    margin: 1em 0em;
+}
+
+input[type=text],textarea
+{
+    width: 80%;
+    padding: .2em;
+    border: 1px solid rgb(134, 134, 134);
+}
+
+select
+{
+    width: 150px;
+    height: 25px;
+    padding: 0px 2.5px;
+
+}
+
+textarea
+{
+    height: 5em;
+}
+
+@media only screen and (max-width: 768px)
+{
+    *{
+        box-sizing: border-box;
+    }
+    body{
+        display: block;
+        width: 100vw;
+        margin: 0%;
+        padding: 0em 0em 2em 0em;
+        font-size: 1em;
+
+        
+    }
+    #main{
+        padding: 0.5em 1em 1em 1em;
+        width: 90vw;
+        
+    }
+    div>.field
+    {
+        display: block;
+        width: 100%;   
+        padding: 0em 1em;    
+    }
+    .field-1
+    {
+        text-align: left;
+        padding: 0em 0em;
+    }
+ 
+    .feild-2{
+        width: 100%;
+        margin: 0px;
+    }
+    input[type= text]
+    {
+        width: 100%;
+        padding: .5em 1em;
+        border-radius: .25em;
+    }
+    textarea
+    {
+        width: 100%;
+        border-radius: .25px; 
+    }
+    div.field-1{
+        width: 100%;
+        margin-bottom: inherit;
+    }
+}
+    </style>
     <title>Project-4</title>
 </head>
 
