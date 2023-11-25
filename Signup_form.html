@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+      body{
+padding: 4%;
+background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+
+
+}
+#background{
+    width: 40em;
+    margin: auto;
+    padding: 4%;
+    border-radius: 2%;
+background-color: #8EC5FC;
+background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+}
+ 
+    </style>
+    <script src="script.js"></script>
+    <title>Signup</title>
+</head>
+<body class=".bg-primary.bg-gradient">
+    <h1 class="row justify-content-md-center p-2">Signup</h1> 
+   <div id="background" class="container">
+    <div class="container justify-content-md-center"> 
+        <form id="form">
+            <div class="form-group row p-2">
+              <label for="name" class="col-sm-2 col-form-label">Name</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="name" placeholder="Monkey D Luffy">
+              </div>
+            </div>
+            <div class="form-group row p-2">
+              <label for="email" class="col-sm-2 col-form-label">Email</label>
+              <div class="col-sm-10">
+                <input type="email" class="form-control" id="email" placeholder="email@example.com">
+              </div>
+            </div>
+
+
+            <div class="form-group row p-2">
+              <label for="state" class="col-sm-2 col-form-label">State</label>
+              <div class="col-sm-6">
+                <select id="state" class="form-select" >
+                  <option value="" selected>Select</option>
+                  <option value="uttar pradesh">Uttar Pradesh</option>
+                  <option value="rajasthan">Rajasthan</option>
+                  <option value="delhi">Delhi</option>
+                  <option value="banglore">Banglore</option>
+                </select>
+              </div>
+              <div class="col-sm-4">
+                <input type="number" maxlength="6" class="form-control" id="pincode" placeholder="Pin Code" >
+              </div>
+            </div>
+
+            <div class="form-group row p-2">
+              <label for="phnumber" class="col-sm-2 col-form-label">Contact</label>
+              <div class="col-sm-10">
+                <input type="number" maxlength="10" class="form-control" id="phnumber" placeholder="Your Phone number">
+              </div>
+            </div>
+
+
+            <div class="form-group row p-2">
+              <label for="password" class="col-sm-2 col-form-label">Password</label>
+              <div class="col-sm-10">
+                <input type="password" class="form-control" id="password" placeholder="Password" >
+              </div>
+            </div>
+            
+            <div class="form-group row p-2">
+              <label for="confirmPassword" class="col-sm-2 col-form-label">Password</label>
+              <div class="col-sm-10">
+                <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm Password" >
+              </div>
+            </div>
+
+            <div class="form-group row p-2">
+                <label class="col-sm-8 col-form-label">Already have an Account. <a href="login.html">Login</a></label>
+                <div class="col-sm-4">
+                  <input type="submit" id="submit" class="btn btn-primary form-control" value="Signup">
+                </div>
+              </div>              
+          </form>
+    </div>
+   </div>
+   <script>
+    var form = document.getElementById('form')
+
+    form.addEventListener('submit', function(event){
+  event.preventDefault() 
+  var name = document.getElementById('name').value
+  var email = document.getElementById('email').value
+  var state = document.getElementById('state').value
+  var pin = document.getElementById('pincode').value
+  var phnumber = document.getElementById('phnumber').value
+  a = document.getElementById('password').value;
+  b = document.getElementById('confirmPassword').value;
+  var password = validatepassword(a,b);
+
+  if (name === ''|| email===''|| state ===''|| pin===''|| phnumber===''){
+    alert('Please enter all required details.')
+  }else{
+    alert('Your Details.\nName: '+name+'\nEmail: '+email+'\nState: '+state+'\nPin Code: '+pin+'\nPhone Number: '+phnumber+'\nPassword: '+password)
+  }
+})
+
+function validatepassword(a,b){
+    if(a!=b){
+      alert('Password and confirm Password do not match!')
+    }
+    else{
+      return a;
+    }
+  }
+     
+      
+
+
+   </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  </body>
+</html>
